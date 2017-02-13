@@ -1,0 +1,75 @@
+{"restaurants":
+        [
+		  {
+		    "Id": 101,
+		    "name": "Red Lobster",
+			"address": "7525 101 Ave", 
+			"city": "Ozone Park",
+			"state": "NY",
+            "zipcode":11416,
+			"latLng": {"lat": 40.683583, "lng":  -73.856385}, 
+			"hours": "10:00am - 10:00pm",
+			"style": "casual",
+			"menu": [{"Id": 15, "name": "Seaside Shrimp Trio", "cost": 19.99, "descript": "Three definitely isn’t a crowd with this dish, a generous sampling of guest favorites: Walt’s Favorite Shrimp, hand-crafted garlic shrimp scampi and our famous shrimp linguini Alfredo."},
+			         {"Id": 37, "name": "Salmon New Orlean", "cost":  27.00, "descript": "This dish will send your mouth on a trip to the Big Easy. Fresh Atlantic salmon, blackened and topped with shrimp tossed in a Cajun butter sauce then topped with a touch of pico de gallo for extra kick. Served with your choice of two sides."}
+					]
+		  },
+		  { 
+		    "Id": 102,
+		    "name": "Olive Garden",
+			"address": "7525 Atlantic Ave",
+			"city": "Ozone Park",
+      		"state": "NY",
+            "zipcode":11416,
+			"latLng": {"lat": 40.6804377, "lng":  -73.8600346},
+			"hours": "10:00am - 10:00pm",
+			"style": "casual",
+			"menu": [{"Id": 4, "name": "Chicken Picatta", "cost": 16.50, "descript":"Grilled chicken topped with a lemon garlic butter sauce, sundried tomatoes and capers. Served with parmesan-crusted zucchini."},
+			         {"Id": 21, "name": "Garlic Mussels Marinara", "cost": 31.50, "descript": "Oven-roasted mussels tossed in our housemade garlic marinara sauce. Served with garlic-parmesan breadstick toast."}
+					]
+			          
+		  },
+		  {
+		    "Id": 103,
+		    "name": "Apple Bees",
+			"address": "161-21 Jamaica Ave",
+			"city": "Jamaica",
+      		"state": "NY",
+            "zipcode":11433,
+			"latLng": {"lat": 40.704270, "lng":  -73.797813}, 
+			"hours": "10:00am - 10:00pm",
+			"style": "casual",
+			"menu": [{"Id": 5, "name": "6 oz. Top Sirloin", "cost": 33.49, "descript": "Medium Rare - RED, with a WARM red center, Garlic Mashed Potatoes, Maple Pecan Mashed Sweet Potatoes, French Onion Soup, Chocolate Chip Cookie Sundae"},
+			         {"Id": 27, "name": "Salmon New Orlean", "cost":  27.00, "descript": "This dish will send your mouth on a trip to the Big Easy. Fresh Atlantic salmon, blackened and topped with shrimp tossed in a Cajun butter sauce then topped with a touch of pico de gallo for extra kick. Served with your choice of two sides."}
+					]
+		  },
+		  {
+		    "Id": 104,
+		    "name": "Jackson Hole",
+			"address": "7525 101 Ave", 
+			"city": "Ozone Park",
+			"state": "NY",
+            "zipcode":11416,
+			"latLng": {"lat": 40.683583, "lng":  -73.856385}, 
+			"hours": "10:00am - 10:00pm",
+			"style": "casual",
+			"menu": [{"Id": 8, "name": "Seaside Shrimp Trio", "cost": 19.99, "descript": "Three definitely isn’t a crowd with this dish, a generous sampling of guest favorites: Walt’s Favorite Shrimp, hand-crafted garlic shrimp scampi and our famous shrimp linguini Alfredo."},
+			         {"Id": 17, "name": "Salmon New Orlean", "cost":  27.00, "descript": "This dish will send your mouth on a trip to the Big Easy. Fresh Atlantic salmon, blackened and topped with shrimp tossed in a Cajun butter sauce then topped with a touch of pico de gallo for extra kick. Served with your choice of two sides."}
+					]
+		  },
+		  {
+		    "Id": 105,
+		    "name": "Japanese Sushi",
+			"address": "7525 101 Ave", 
+			"city": "Ozone Park",
+			"state": "NY",
+            "zipcode":11416,
+			"latLng": {"lat": 40.683583, "lng":  -73.856385}, 
+			"hours": "10:00am - 10:00pm",
+			"style": "casual",
+			"menu": [{"Id": 2, "name": "Seaside Shrimp Trio", "cost": 19.99, "descript": "Three definitely isn’t a crowd with this dish, a generous sampling of guest favorites: Walt’s Favorite Shrimp, hand-crafted garlic shrimp scampi and our famous shrimp linguini Alfredo."},
+			         {"Id": 19, "name": "Salmon New Orlean", "cost":  27.00, "descript": "This dish will send your mouth on a trip to the Big Easy. Fresh Atlantic salmon, blackened and topped with shrimp tossed in a Cajun butter sauce then topped with a touch of pico de gallo for extra kick. Served with your choice of two sides."}
+					]
+		  }
+		]
+}

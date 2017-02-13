@@ -1,0 +1,11 @@
+<header class = "container-fluid">
+		<div class="logos pull-left">
+			<a href="index.html"><img src="images/logo.png" /></a>
+		</div>
+        <nav class="menu pull-right" ng-controller ="profileCtrl">
+			<ul>
+   				<li>Signed in as: &nbsp {{username}}</li>
+				<li id ="logOut"><a ng-click ="logOut()">Sign-out</a></li>
+			</ul>
+		</nav>
+</header>

@@ -1,0 +1,31 @@
+<div ng-show ="cc.data.show.request">
+   <p>Please choose a restaurant to order from</p>
+</div>
+
+<div ng-show="cc.data.show.confirm">
+  <div class = "row">
+      <div class ="col-xs-4">
+	      <span>{{cc.data.selectedRest.name}}</span><br/>
+		  <span>{{cc.data.selectedRest.address}}</span><br/>
+		  <span>{{cc.data.selectedRest.city}}</span>
+	  </div>
+	  <div class ="col-xs-4">
+	      <span>Hours</span><br/>
+		  <span>{{cc.data.selectedRest.hours}}</span>
+	  </div>
+	  <div class ="col-xs-4">
+	  <button class="btn btn-responsive" ng-click = "cc.setPickup()">Set as pickup<br/> destination</button>
+	  </div>
+  </div>
+</div>
+<div ng-show ="cc.data.show.pending">
+ <div class="row">
+     <div class ="col-xs-6">
+	      <span>Estimate time to <br/>delivery:</span><span> {{cc.order.orderStat.time}} mins</span>
+	 </div>
+	 <div class= "col-xs-6">
+	      <span class="statusBlk pulse pull-right" >{{cc.order.orderStat.status}}</span>
+	 </div>
+  </div>
+</div>
+		  

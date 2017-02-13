@@ -1,0 +1,75 @@
+	<div id ="header" ng-include ="'/partials/header.html'"></div>
+	<section id="feature-image" class="container-fluid">
+		<h1>TRY A NEW MEAL TODAY</h1>
+	</section>
+	
+	<section id="order" class="container-fluid">
+		<div class="heading row">
+			<div ><h1 class="heading-text">HOW &nbsp IT &nbsp WORKS</h1></div>
+			<div class="underline"></div>
+		</div>
+		<div class="wrapper">
+			<div class="how-in-img" >
+				<img src="images/menu.jpg"  />
+			</div>
+			<div class="how-in-txt">
+				<p><span class="bold-sp">The process is simple.</span><span class="mild-sp">We deliver whatever food you order from our partner restaurants. We provide an experience to our patrons with utmost courtesy and hospitality. Try out Foodar today!</span></p>
+				<ol style="margin-top:20px;">
+					<li>Order your food</li>
+					<li>Find a driver</li>
+					<li>Place pickup request</li>
+				</ol>
+				<a ui-sref="about" class="read-btn animate-btn">Read More</a>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</section>
+	
+	<section id="cards" class="container-fluid">
+		<div class="heading row">
+			<h1 class="heading-text">FEATURE &nbsp RESTAURANTS</h1>
+			<div class="underline"></div>
+		</div>
+		
+		<div class="float-wrapper">
+			<div class="restaurant">
+				<img src="images/fish.jpg" alt="" title="" />
+				<h3>Fish & Chips Gallore!</h3>
+				<p>Since 1968, Fish & Chips Gallore! has served the bay area with its palatable array of fried fish
+					and sailor's choice dessert.</p><p>Order today and recieve 15% your total meal and we'll throw in
+					our famous hush puppies as a thank you.</p>
+				
+			</div>
+			<div class="restaurant">
+				<img src="images/burger.jpg" alt="" title="Bubba Joes Burgers" />
+				<h3>Bubba Joe's</h3>
+				<p>When you actually, really desire a burger, you order from Bubba Joe's. Unlike the fast food business, we	
+					eat our own food and love it.</p><p>Order 2 burgers and get a small fry on us today.</p>
+			</div>
+			<div class="restaurant">
+				<img src="images/dessert.jpg" alt="" title="" />
+				<h3>Awww Yeah Desserts</h3>
+				<p>Welcome to your favorite part of dinner, lunch, breakfast, brunch, any meal. We know you don't need
+					encouragement from us to eat our desserts. Look at the picture. You know you want it.</p><p>Just for 
+					you, we'll knock off 10% to make your wallet feel good too.</p>
+			</div>
+		</div>
+			
+		<div class="clear"></div>
+	</section>
+	
+	<section id="yourCity" class="findus container-fluid" ng-controller="homeCtrl">
+		<div class="wrapper">
+			<h3>Find the nearest city</h3>
+			<p>Fill out the form below with your zip code of where you live.</p>
+			<div class="inp-grp" >
+			    <form class="form-inline" ng-submit = "updateCity(zip)">
+				  <input id="cityZip" name="cityZip" type="number" class="form-control inp-wd" ng-model="zip"/>
+				  <input id="cityChecker" class="animate-btn" type="submit" value="Go" />
+				</form>
+				<div id="cityCheck"></div>
+			</div>
+		</div>
+	</section>
+	
+	<div id ="footer" ng-include ="'/partials/footer.html'"></div>

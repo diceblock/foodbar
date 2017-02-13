@@ -1,0 +1,82 @@
+<div id="driver" class="cust-driver max-width" >
+    <div class="banner container-fluid">
+	    <h4>Drivers</h4>
+	</div>
+	<div ng-include ="'partials/headerLite.html'"></div>
+	
+	<div ng-controller = "driverCtrl as drv">
+    <section>
+		<div class="row block" >
+			<div class="custSel col-xs-12">
+				<a class = "col-xs-4" href="/#profile">Account Settings</a>
+				<p class= "col-xs-8">Delivery: <span class="insert"> {{drv.progress}}</span></p>
+			</div>
+		</div> 
+	    <div class ="row block">
+		    <div class ="col-sm-9">
+	          <p>Current location: <span class="insert">{{drv.currentLocation}}</span></p> 
+			</div>
+			<div class="col-sm-3">
+		      <button class="btn" ng-click = "drv.upDate()">Update current <br/> location</button>
+			</div>
+		</div>
+		<div class="underline"></div>
+	</section>
+    
+	<section ng-if="drv.data.show.landing">
+	    <div class="row">
+		    <div class="col-sm-12 table-container table-responsive">
+		    <table summary="pending deliveries" class="table table-hover table-striped">
+			       <thead>
+				      <tr>
+				         <th>Miles Away</th>
+					     <th>Restaurant</th>
+					     <th>Destination</th>
+					     <th>Total Miles</th>
+					     <th>Style</th>
+						 <th>Sub Total</th>
+					  </tr>
+				   </thead>
+				   <tbody>
+				      <tr ng-repeat = "data in drv.data.tableData track by $index">
+				         <td>{{data.milesAway}}</td>
+					     <td>{{data.restName}}</td>
+					     <td>{{data.restAddress}}</td>
+					     <td>{{data.totalDist}}</td>
+					     <td>{{data.style}}</td>
+						 <td>${{data.subTotal}}</td>
+						 <td><button class="btn" ng-click ="drv.selectRequest(data.index)">select</button></td>
+				      </tr>
+				   </tbody>
+			</table>
+			</div>
+		</div>
+	</section>	
+    
+	<section ng-show ="!drv.data.show.landing">
+	    <div class="row">
+		     <div class="col-sm-7">
+		        <div id ="map" ></div>
+			 </div>
+			 <div class ="center-block col-sm-5" ng-show="drv.data.show.request">
+			     <p>Estimated time to location: &nbsp <span class="insert">{{drv.duration}}</span></p>
+				
+		     </div>
+			 <div class ="center-block col-sm-5" ng-show="drv.data.show.enroute">
+			     <p>Estimated time to Home:&nbsp<span>{{drv.duration}}</span></p>
+				 
+				 <br/><br/>
+				 <button class="btn btn block" ng-click ="drv.notifyPu()">
+				         Send Notification<br/>Food is picked up</button>
+		     </div>
+			 <div class ="center-block col-sm-5" ng-show="drv.data.show.delivered">
+			     <p>Estimated time to Home:&nbsp<span>{{drv.duration}}</span></p>
+				 
+				 <br/><br/>
+				 <button class="btn btn block" ng-click ="drv.notifyDel()">
+				         Send Notification<br/>Food is Delivered</button>
+		     </div>
+		</div>
+	</section>
+    </div>
+</div>

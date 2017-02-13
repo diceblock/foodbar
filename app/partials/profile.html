@@ -1,0 +1,88 @@
+ 
+
+<div id ="profile" class="max-width" ng-controller="profileCtrl">
+	
+	<div ng-include ="'/partials/headerLite.html'"></div>
+	
+	<section id ="profileSect">
+		<div class="heading row">
+		    <div class = "col-xs-9">
+				<span id = "fullName" class= "col-xs-12">{{fullName}}</span>
+				<span class ="col-xs-12">Your Account, your way</span>
+				<span id="changeTheme"  class="col-xs-12"><a ng-click="show = !show">Change Theme</a></span>
+			</div>
+			<div class="ordFd col-xs-3 pull-right"> 
+			     <a ui-sref = "customer"><img src="images/platter.png"/></a>
+			</div>
+        </div>
+        <div id="colorSelection" ng-show ="show">
+              <span> Click on a color below to set the background color of this page.</span><br>
+                
+              <ul>
+                    <li ng-repeat = "color in bgcolors">
+					   <a ng-click = "changeTheme(color)" style="background-color: {{color}};"></a></li>
+                    
+               </ul>
+         </div>
+        
+         <div class="underline"></div>
+            <br>
+    </section>
+	<section>
+		<div class ="row">
+			<div id= "pic-menu" class = "col-sm-5 col-sm-push-7">
+			  <div id="pic-box">
+				  
+				  <input type="file" id="filePhoto" ng-model-instant onchange="angular.element(this).scope().imageUpload(event)" 
+						 accept="image/*" style="display:none" />
+				  <div id="displayPhoto" class="thumb">
+				  </div>
+				  <change-photo/> <!--directive to change photo-->
+			  </div>
+			  <nav>
+				  <ul>
+					  <li><a ng-click = "goToDiv('contactInfo')">Contact Information</a></li>
+					  <li><a ng-click = "goToDiv('generalInfo')">General Information</a></li>
+					  <li><a ng-click = "goToDiv('paymentInfo')">Payment Information</a></li>
+					  <li><a ng-click = "goToDiv('favFood')">Favorite Foods</a></li>
+				   </ul>
+			   </nav>
+		    </div>    
+	
+			 <div  class="col-sm-7 col-sm-pull-5">
+						
+				<div id="contactInfo" class="profile-group">
+					<h5>Contact Information</h5>
+					<p> Email: <span id = "pEmail">{{email}}</span></p>
+					<p>
+					   Address:<br>
+					   <span id= "street1">{{street1}}</span><br/>
+					   <span id= "street2">{{street2}}</span><br/>
+					   <span id= "city">{{city}}</span><br/>
+					   <span id ="state">{{state}}</span>
+					   <span id = "zipcode">{{zipcode}}</span>
+					</p>
+				</div>
+				<div id="generalInfo" class="profile-group">
+					<h5>General Information</h5>
+					<p>Age: <span id="age">{{age}}</span></p>
+					<p>Phone: <span id="phone">{{phone}}</span></p>
+				</div>
+				<div id="paymentInfo" class="profile-group">
+					<h5>Payment Information</h5>
+					<p>Credit Card: <span id="creditCard">{{creditCard}}</span></p>
+				</div>
+				<div id="favFood" class="profile-group">
+				   <h5>Favorite Foods</h5>
+				   <p>&nbsp </p><br>
+				</div>
+				
+				<div class="clear"></div>
+			</div>    
+		    <div class="clear"></div>
+	  </div>
+	</section>
+	
+	<div ng-include ="'/partials/footer.html'"></div>
+	
+</div>

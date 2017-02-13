@@ -1,0 +1,65 @@
+/*-----footer------*/
+
+footer {
+	
+    background: #202020;
+	color: white;
+}
+footer .container{
+	background-color:inherit;
+	padding:8px 4px 4px 20px;
+}
+
+footer article {
+	color: white;
+}
+#sitemap {
+    margin-right: 3px;
+}
+.sitemap {
+    @extend .col-sm-4;
+}
+.footmap {
+    @extend .col-sm-4;
+}
+.foot-title::after {
+    background: #eaeaea none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 3px;
+    position: absolute;
+    width: 20px;
+}
+
+.foot-title h3 {
+    color: #fff;
+    text-shadow: none;
+}
+.sitemap ul {
+    margin: 5px 0 ;
+	padding:10px;
+    }
+#sitemap ul li, #sitemap a {
+    color: white;
+    text-decoration: none;
+}
+.sitemap ul li {
+    margin: 1px 0;
+}
+.foot-menu {
+    @extend .col-sm-4;
+}
+.foot-menu ul {
+    margin: 12px 0 ;
+    padding: 10px;
+}
+.foot-menu ul li {
+    margin: 6px 0;
+}
+.copy {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+	padding:10px;
+}
+

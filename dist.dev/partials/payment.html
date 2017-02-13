@@ -1,0 +1,35 @@
+<div id="payment" class="popUp">
+	<form >	
+        <fieldset>
+            <legend>Payment Option</legend>
+			<div class="pull-right">
+				<div class="form-group">
+					 <label for="subTotal">Sub total: </label>
+					 <input type="text" id="subTotal" ng-model="subTotal" size ="6" disabled />
+				</div>
+                <div class="form-group">
+					 <label for="tax">Tax: </label>
+					 <input type="text" id="tax" ng-model="tax" size ="6" disabled />
+				</div>
+                <div class="form-group">
+					 <label for="deliveryFee">Delivery fee: </label>
+					 <input type="text" id="deliveryFee" ng-model="fee" size ="6" disabled />
+				</div>
+                <div class="form-group">
+					 <label for="gratuity">Gratuity: </label>
+					 <input type="text" id="gratuity" ng-model="tip" size ="6" /><br/>
+					 <span class="red">{{error}}</span>
+				</div>
+                <div class="form-group">
+					 <label for="total">Total: </label>
+					 <input type="text" id="total" ng-model="total" size ="6" disabled />
+				</div>				
+   			
+				<div class="form-group">
+			
+			     </div>
+			     <input type="submit" class="rinp-btn" value="submit payment" ng-click = "submit()" />
+			</div>
+		</fieldset>		
+	</form>
+</div>

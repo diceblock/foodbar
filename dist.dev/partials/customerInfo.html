@@ -1,0 +1,55 @@
+<div id="restList" class = "center-block" ng-show = "cc.data.show.request">
+     <p>Restaurants nearby:</p>
+	 
+	 <ol>
+	     <li ng-repeat="rest in cc.data.rests" >
+		    <a ng-click = "cc.open(rest)" ng-bind-html="rest.name"></a>
+     	 </li>
+     </ol>
+</div>
+
+
+<div ng-show = "cc.data.show.confirm" class="center-block">
+     
+	 <table>
+	    <caption>Order Details</caption>
+	    <tr>
+		    <td>Name: </td>  
+	        <td>{{fullName}}</td>
+		</tr>
+		<tr>
+		    <td>Phone: </td>
+         	<td>{{phone}}</td>
+		</tr>
+		<tr>
+		    <td>Credit Card: </td>
+			<td>{{creditCard}}</td>
+		</tr>
+		<tr>
+		    <td>Style: </td>
+			<td>{{cc.data.selectedRest.style}}</td>
+		</tr>
+		<tr>
+		    <td>Miles: </td>
+			<td>{{distance}}</td>
+		</tr>
+		<tr>
+		    <td>Sub total: </td>
+			<td>$ {{cc.data.selectedMenu.cost}}</td>
+		</tr>
+	</table> 
+    
+</div>
+
+<div ng-show ="cc.data.show.pending" class="center-block">
+    <div>
+	    <h3>{{cc.data.selectedRest.name}}</h3>
+		<span>{{cc.data.selectedRest.address}}</span><br/>
+		<span>{{cc.data.selectedRest.city}}</span><br/>
+		<h3>Status</h3>
+		<span>{{cc.status}}</span><br/>
+		<h3>Verification #</h3>
+		<span>{{cc.data.orderNo}}</span><br/><br/>
+	    <button class="btn btn block" ng-click ="cc.cancelRequest()">cancel request</button>
+	</div>
+</div>

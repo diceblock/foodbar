@@ -1,0 +1,54 @@
+$breakpoints: (
+  null  : 320px,
+  xsmall: 480px,
+  small : 768px,
+  medium: 992px, 
+  large : 1200px
+);
+
+$p-font-sizes: (
+  null  : 15px,
+  xsmall: 16px,
+  small : 17px,
+  medium: 17px,
+  large : 19px
+);
+
+$h1-font-sizes: (
+  null  : 26px,
+  xsmall: 28px,
+  small : 31px,
+  medium: 33px,
+  large : 36px
+);
+
+$h2-font-sizes: (
+  null  : 20px,
+  xsmall: 22px,
+  small : 25px,
+  medium: 27px,
+  large : 30px
+);
+
+$h3-font-sizes: (
+  null  : 13px,
+  xsmall: 15px,
+  small : 18px,
+  medium: 21px,
+  large : 24px
+);
+
+$h4-font-sizes: (
+  null  : 11px,
+  xsmall: 12px,
+  small : 14px,
+  medium: 16px,
+  large : 19px
+);
+$blue: rgb(66, 155, 244);  
+$sky-blue : rgb(66, 226, 244);
+$lime :rgb(46, 170, 56);
+$yellow: rgb(244, 200, 66);
+$grey-yellow: rgb(104, 86, 33);
+ 
+ 

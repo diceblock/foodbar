@@ -1,0 +1,40 @@
+{ "users": 
+  [
+       {
+	"userId": 1,
+	"firstName": "David",
+	"lastName": "Johnson",
+	"email": "djohnson@gmail.com",
+	"age": 45,
+	"phone": "9175171122",
+	"address": "10436 115th St, Jamaica, NY 11419",
+	"latLng": {"lat":40.684732, "lng":-73.827533},
+	"creditCard": "visa 6624561234",
+	"favFood": ["fried rice", "red snapper", "cream spinach"]
+       },
+       {
+	"userId": 2,
+	"firstName": "John",
+	"lastName": "Smith",
+	"email": "johns@gmail.com",
+	"age": 45,
+	"phone": "9175177612",
+	"address": "8812 Atlantic Ave, Woodhaven, NY 11421",
+	"latLng": {"lat": 40.6864, "lng": -73.855297},
+	"creditCard": "visa 6624561234",
+	"favFood": ["fried rice", "red snapper", "cream spinach"]
+       },
+       {
+	"userId": 3,
+	"firstName": "Mary",
+	"lastName": "Lewis",
+	"email": "maryl@gmail.com",
+	"age": 45,
+	"phone": "9175171122",
+	"address": "3615 Bell Blvd, Bayside, NY, 11361",
+	"latLng": {"lat": 40.76736, "lng": -73.77293},
+	"creditCard": "visa 6624561234",
+	"favFood": ["fried rice", "red snapper", "cream spinach"]
+       }
+ ]
+}

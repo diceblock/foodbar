@@ -1,0 +1,31 @@
+<div id ="customer" class ="cust-driver" ng-controller ="profileCtrl">
+	
+	<div ng-include= "'partials/headerLite.html'"></div>
+	<div ng-controller = "custCtrl as cc">
+	<section>
+		<div class="row" >
+				<div class="custSel col-sm-6 offset-sm-6">
+					<a class = "col-xs-6" ui-sref="profile">Account Settings</a>
+					<a class = "col-xs-6" ng-click="goToDiv('restList')">Order Food</a>
+				</div>
+		</div> 
+		
+		<div class= "row">
+		        <span class= "col-xs-12"><hr/></span>
+			    <div id= "map-container" class="col-sm-7" ng-controller= "mapCtrl"> 
+				<div id="map"></div>
+				</div>
+				<div ng-include="'partials/customerInfo.html'" class= "col-sm-5 info"></div>
+			
+		</div>
+	</section>
+	<section id = "customerFooter" class="container-fluid">
+	   <div class= "row">
+			<div class= "col-xs-12">
+				  <div class="underline"></div>
+				  <div ng-include = "'partials/customerFooter.html'"></div>
+			</div>
+		</div>
+	</section>
+	</div>
+</div>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang ="en" ng-app="foodbarApp">
+<head>
+    <!--Bootstrap required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Foodar Sample Application</title>
+    <!-- bower:css -->
+    <!-- endinject -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="styles/app.css">
+    <!-- endinject -->
+    
+	<link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Aguafina+Script" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+    
+	<div id ="main" ui-view=""></div>
+	
+<script type = "text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB68YTk8msxYNw1QnutStp3Va85Fo5aAeg&language=en"></script>
+<!-- bower:js -->
+<script src="bower_components/jquery.js"></script>
+<script src="bower_components/angular.js"></script>
+<script src="bower_components/angular-file-upload.js"></script>
+<script src="bower_components/angular-sanitize.js"></script>
+<script src="bower_components/angular-ui-router.js"></script>
+<script src="bower_components/bootstrap.js"></script>
+<script src="bower_components/ui-bootstrap-tpls.js"></script>
+<!-- endinject -->
+<!-- inject:js -->
+<script src="services/utilSrvc.js"></script>
+<script src="services/userSrvc.js"></script>
+<script src="services/restSrvc.js"></script>
+<script src="services/mapSrvc.js"></script>
+<script src="services/driverSrvc.js"></script>
+<script src="js/zipcode.js"></script>
+<script src="js/register.js"></script>
+<script src="js/profile.js"></script>
+<script src="js/order.js"></script>
+<script src="js/login.js"></script>
+<script src="js/home.js"></script>
+<script src="js/driver.js"></script>
+<script src="js/customer.js"></script>
+<script src="app.js"></script>
+<!-- endinject -->
+
+</body>
+</html>

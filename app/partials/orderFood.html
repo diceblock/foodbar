@@ -1,0 +1,23 @@
+<div class ="popUp">
+     <div>
+           
+	    <table class= "table-striped">
+		     <caption>Select a menu</caption>
+			 <tr>
+			     <th>Menu</th>
+				 <th>Cost</th>
+			 </tr>
+			 <tr ng-repeat="Menu in ofd.restaurant.menu">
+	             <td>
+		             <a ng-click ="ofd.selectMenu(Menu)" ng-bind-html = "Menu.name" ></a>
+				 </td>
+				 <td>$ <span ng-bind-html="Menu.cost"></span>
+			     </td>
+			 </tr>
+        </table>
+	
+	 </div>
+	 
+	 <button class="btn btn-close" type="button"
+             ng-click="ofd.cancel()">close</button>
+</div>
